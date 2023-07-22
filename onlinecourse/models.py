@@ -100,7 +100,7 @@ class Enrollment(models.Model):
     rating = models.FloatField(default=5.0)
 
 
-class Question(models.Model):
+class Question(models.Model):   
     # Foreign key to course
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     # question text
